@@ -1,0 +1,206 @@
+@font-face {
+    font-family: "morty";
+    src: url(morty.ttf);
+    font-family: "rick";
+    src: url(rick.ttf)
+}
+
+body {
+    width: 950px;
+    margin: auto;
+    background-image: url("morty.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    font-family: "rick"
+}
+
+.board_8x8 {
+    margin: auto;
+    width: 832px;
+    height: 832px;
+}
+.board_4x4 {
+    margin: auto;
+    width: 416px;
+    height: 416px;
+}
+
+.board_6x6 {
+    margin: auto;
+    width: 624px;
+    height: 624px;
+}
+
+
+
+.header {
+    margin: auto;
+    width: 300px;
+}
+
+h1 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-shadow:
+    -2px -2px 0 rgb(6, 7, 6),
+    2px -2px 0 rgb(6, 7, 6),
+    -2px 2px 0 rgb(6, 7, 6),
+    2px 2px 0 rgb(6, 7, 6);
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 150px;
+    text-align: center;
+    color:rgb(19, 211, 153);
+}
+
+.myButton
+{
+    background-color: rgba(19, 211, 153, 0.582);
+    border-radius:10px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    display:inline-block;
+    cursor:pointer;
+    font-size:18px;
+    padding:8px 24px;
+    text-decoration:none;
+    border: 1.5px solid rgb(0, 0, 0);
+    font-family: 'Indie Flower';
+    color:rgb(0, 0, 0);
+    
+}
+.myButton:active {
+    position:relative;
+    top:1px;
+}
+
+#game_assets {
+    text-shadow:
+    -1px 0 rgb(6, 7, 6),
+    0 1px rgb(6, 7, 6), 
+    1px 0 rgb(6, 7, 6), 
+    0 -1px rgb(6, 7, 6);
+    color:rgb(19, 211, 153);
+    background-image: url("Rick1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: 3;
+    grid-row: 1;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid rgb(19, 211, 153);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    
+    opacity: 0.9;
+}
+
+#size
+{
+    background-color: rgba(19, 211, 153, 0.534);
+    border-radius:10px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    display:inline-block;
+    cursor:pointer;
+    font-size:18px;
+    padding:8px 24px;
+    text-decoration:none;
+    border: 1.5px solid rgb(0, 0, 0);
+    font-family: 'Indie Flower';
+        color:rgb(0, 0, 0);
+}
+.cell {
+    position: relative;
+    border: 2px solid black;
+    border-radius: 10px;
+    float:left;
+    width:100px;
+    height:100px;
+    display: inline-flex;
+    background-color: white;
+    font-size: 56px;
+    line-height: 100px;
+    text-align: center;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.274);
+    font-family: 'Indie Flower';
+    vertical-align: middle;
+
+}
+
+.occupied{
+    background-color: rgba(0, 0, 0, 0.274);
+    display: inline-block;
+
+}
+.val2 {
+    background-color: rgb(117, 233, 39);;
+    display: inline-block;
+}
+
+.val4 {
+    background-color: rgb(123, 179, 243);
+    display: inline-block;
+}
+
+.val8 {
+    background-color: rgb(230, 220, 93);
+    display: inline-block;
+}
+
+.val16 {
+    background-color: rgb(218, 82, 77);
+    display: inline-block;
+}
+
+.val32 {
+    background-color: rgb(153, 18, 216);
+    display: inline-block;
+}
+
+.val64 {
+    background-color: rgb(52, 218, 209);
+    display: inline-block;
+}
+
+.val128 {
+    background-color: rgb(45, 112, 13);
+     
+     display: inline-block;
+}
+
+.val256 {
+    background-color: rgba(224, 221, 3, 0.678);
+    display: inline-block;
+}
+
+.val512 {
+    background-color: #FFBF00;
+    display: inline-block;
+}
+
+.val1024 {
+    background-color: rgba(215, 54, 236, 0.904);
+    display: inline-block;
+}
+
+.val2048 {
+    background-color: rgba(0, 0, 0, 0.685);
+    display: inline-block;
+    text-shadow:
+    -2px -2px 0 rgb(253, 200, 23),
+    2px -2px 0 rgb(253, 200, 23),
+    -2px 2px 0 rgb(253, 200, 23),
+    2px 2px 0 rgb(253, 200, 23);
+    border-color: rgb(253, 200, 23);}
+
+.mute{
+    background-color: rgba(19, 211, 153, 0.534);
+    border: 2px solid black;
+    border-radius: 10px;
+
+
+}
